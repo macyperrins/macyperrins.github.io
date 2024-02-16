@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Macy's Favorite Things</title>
+    <style>
+        body {
+            background-color: #f0e4d7; /* Light peach background */
+            font-family: 'Arial', sans-serif; /* Change as per your preference */
+            color: #333333; /* Dark gray text color */
+            text-align: center; /* Center-align text */
+            padding: 50px; /* Add some padding around the content */
+        }
+
+        h1 {
+            color: #d64161; /* Fun pink color for the heading */
+            font-size: 2.5em; /* Larger font size for the heading */
+        }
+
+        p {
+            color: #6b5b95; /* Purple text color for the paragraph */
+            font-size: 1.2em; /* Slightly larger font size for better readability */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Macy's Favorite Things!!!</h1>
+    <p>Discover the colors, fun, and joy in every selection.</p>
+
+</body>
+</html>
