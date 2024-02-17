@@ -3,7 +3,8 @@
   <title>Macy's Favorite Things!!!!!</title>
   <style>
     body {
-      font-family: Arial, sans-serif;}
+      font-family: Arial, sans-serif;
+    }
   </style>
 </head>
 <body>
@@ -11,8 +12,11 @@
   <h1 style="color: pink; font-size: 48px;">Welcome</h1>
 
   <p style="color: blue; font-size: 24px;">
-  This is the coolest website ever
+    This is the coolest website ever
   </p>
+
+  <!-- Link to Page One -->
+  <a href="page-one.html" style="color: green; font-size: 20px;">Go to Page One!</a>
   
 </body>  
 </html>
