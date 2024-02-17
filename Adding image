@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>My Favorite Things</title>
+</head>
+<body>
+
+<h1>Welcome to My Favorite Things Page</h1>
+
+<img src="images/favorite-thing.jpg" alt="Description of the image">
+
+</body>
+</html>
