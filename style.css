@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/style.css" type="text/css">
+
+h1 {
+  color: pink;
+  background-color: orange;
+  font-size: large;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p {
+    text-wrap: pretty;  
+}
