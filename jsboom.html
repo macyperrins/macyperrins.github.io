@@ -4,20 +4,19 @@
 
     <h2>Count Down: <span id="count">20</span></h2>
     <button onclick="updateCount()">Next</button>
-        <!-- Button that turns the background blue when u click it -->
+    <!-- Button that turns the background blue when you click it -->
     <button onclick="changeBackgroundToBlue()">Make Blue</button>
-
 
     <script>
         var i = 20;
 
         function updateCount() {
             i = i - 1;
-            countobj = document.getElementById("count");
+            var countobj = document.getElementById("count");
             console.log("Updating object: " + countobj);
             if (i === 0) {
                 // Make the count object say Yay when i gets to 0
-            countobj.innerHTML = "<b>Yay!</b>" + i + "</b>";
+                countobj.innerHTML = "<b>Yay!</b>";
             } else {
                 // Make it keep going and showing the countdown if it's not at 0 yet
                 countobj.innerHTML = "<b>" + i + "</b>";
@@ -26,13 +25,13 @@
             // Calculate the red component based on the current value of i
             // As i decreases, red component increases
             var redComponent = Math.round(255 * (1 - i / 20));
-            // Set the background color
+            // Set the background color to shades of red based on the countdown
             document.body.style.backgroundColor = "rgb(" + redComponent + ", 0, 0)";
         }
 
-        function changeBackgroundtoBlue(){
-            //Close function for blue button
-            document.body.style.backgroundColor= "blue";
+        function changeBackgroundToBlue() {
+            // This function changes the background color to blue
+            document.body.style.backgroundColor = "blue";
         }
     </script>
 </body>
