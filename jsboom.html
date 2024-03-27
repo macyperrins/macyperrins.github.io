@@ -12,7 +12,13 @@
             i = i - 1;
             countobj = document.getElementById("count");
             console.log("Updating object: " + countobj);
-            countobj.innerHTML = "<b>" + i + "</b>";
+            if (i === 0) {
+                // Make the count object say Yay when i gets to 0
+            countobj.innerHTML = "<b>Yay!</b>" + i + "</b>";
+            } else {
+                // Make it keep going and showing the countdown if it's not at 0 yet
+                countobj.innerHTML = "<b>" + i + "</b>";
+            }
         }
     </script>
 </body>
