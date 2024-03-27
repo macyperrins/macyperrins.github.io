@@ -1,0 +1,37 @@
+<html>
+<body>
+    <h1>Exploring the DOM</h1>
+
+    <h2>Count Down: <span id="count">20</span></h2>
+    <button onclick="updateCount()">Next</button>
+    <!-- New button for changing the background to blue -->
+    <button onclick="changeBackgroundToBlue()">Make Blue</button>
+
+    <script>
+        var i = 20;
+
+        function updateCount() {
+            i = i - 1;
+            var countobj = document.getElementById("count");
+            console.log("Updating object: " + countobj);
+            if (i === 0) {
+                // Update the count object to display "Yay!" when i reaches 0
+                countobj.innerHTML = "<b>Yay!</b>";
+            } else {
+                // Otherwise, continue to display the countdown
+                countobj.innerHTML = "<b>" + i + "</b>";
+            }
+
+            // Calculate the red component based on the current value of i
+            var redComponent = Math.round(255 * (1 - i / 20));
+            // Set the background color
+            document.body.style.backgroundColor = "rgb(" + redComponent + ", 0, 0)";
+        }
+
+        // New function to change the background color to blue
+        function changeBackgroundToBlue() {
+            document.body.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>
