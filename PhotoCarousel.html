@@ -2,23 +2,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Carousel</title>
+    <title>Macy Photo Carousel</title>
     <style>
-        
         #cimage {
-            cursor: pointer; 
-            width: 100%; 
-            max-width: 600px; 
-            height: auto; 
+            cursor: pointer;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        
+        .color-changer {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-<img id="cimage" height="600" src="your-first-image.jpg" alt="Image Changes" onclick="changeImage()">
+<img id="cimage" height="600" src="https://media.geeksforgeeks.org/wp-content/uploads/20230828122916/7-colours-of-rainbow.webp" alt="Image Changes" onclick="changeImage()">
+
+
+<button class="color-changer" onclick="changeBackgroundColor()">Change Background Color</button>
 
 <script>
-   
+    
     var images = [
         "https://media.geeksforgeeks.org/wp-content/uploads/20230828122916/7-colours-of-rainbow.webp",
         "https://upload.wikimedia.org/wikipedia/commons/4/42/Ring-billed_gull_and_a_rainbow_%2852910%29.jpg",
@@ -34,7 +43,21 @@
         if (currentIndex >= images.length) {
             currentIndex = 0; 
         }
-        document.getElementById('cimage').src = images[currentIndex]; 
+        document.getElementById('cimage').src = images[currentIndex];
+    }
+
+    
+    var colors = ["#f1c40f", "#e74c3c", "#2ecc71", "#3498db", "#9b59b6", "#34495e", "#e67e22"];
+
+    var currentColorIndex = 0; 
+
+    
+    function changeBackgroundColor() {
+        currentColorIndex++; 
+        if (currentColorIndex >= colors.length) {
+            currentColorIndex = 0; 
+        }
+        document.body.style.backgroundColor = colors[currentColorIndex]; 
     }
 </script>
 
