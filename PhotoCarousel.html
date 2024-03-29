@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        /* Add styles if needed */
+        #cimage {
+            cursor: pointer; /* Indicates the image can be clicked */
+            width: 100%; /* Adjust as needed */
+            max-width: 600px; /* Adjust as needed */
+            height: auto; /* Keeps the aspect ratio of the image */
+        }
+    </style>
+</head>
+<body>
+
+<img id="cimage" height="600" src="your-first-image.jpg" alt="Image Changes" onclick="changeImage()">
+
+<script>
+    // Initialize an array with image sources
+    var images = [
+        "https://media.geeksforgeeks.org/wp-content/uploads/20230828122916/7-colours-of-rainbow.webp",
+        "https://upload.wikimedia.org/wikipedia/commons/4/42/Ring-billed_gull_and_a_rainbow_%2852910%29.jpg",
+        "https://www.si.edu/sites/default/files/newsdesk/press_releases/rainbow.jpg",
+        // ... Add more images as needed
+    ];
+
+    var currentIndex = 0; // To keep track of the current image index
+
+    // Function to change the image
+    function changeImage() {
+        currentIndex++; // Move to the next image index
+        if (currentIndex >= images.length) {
+            currentIndex = 0; // If at the end, go back to the first image
+        }
+        document.getElementById('cimage').src = images[currentIndex]; // Update the image source
+    }
+</script>
+
+</body>
+</html>
